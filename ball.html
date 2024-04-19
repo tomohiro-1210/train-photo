@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ball Animation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="inner">
+        <div class="container">
+            <div id="ball"></div>
+            <div class="container__slice"></div>
+        </div>
+    </div>
+
+  <!-- css -->
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #FFDDFA;
+}
+
+.container__slice{
+  background-color: #fff;
+  transform: rotate(-3.1deg);
+    margin-top: 145px;
+    height: 20vh;
+    width: 110vw;
+}
+
+#ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;
+  animation: ballAnimation 6s linear infinite;
+  z-index: 100;
+}
+
+@keyframes ballAnimation {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(100vw) translateY(-100px);
+  }
+}
+
+
+  </style>
+
+  <!-- js -->
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var ball = document.getElementById('ball');
+        ball.style.bottom = '0';
+        ball.style.left = '0';
+        });
+
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

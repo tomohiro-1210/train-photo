@@ -3,60 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+
+    <!-- googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>ほしてつの鉄道ミュージアム</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__wrap">
-            <h1 class="header__name">名前</h1>
-            <ul class="header__list">
-                <li class="header__item">メニュー１</li>
-                <li class="header__item">メニュー２</li>
-                <li class="header__item">メニュー３</li>
-            </ul>
+    <!-- header -->
+    <header class="l-header">
+      <!-- ロゴ -->
+      <div class="l-header__logo">
+        <img src="./assets/img/logo-hoshitetsu.png" alt="logo-hoshitetsu">
+      </div>
+      <!-- 電車 -->
+      <div class="l-header__container">
+        <div class="l-header__train" id="header-train">
+          <img src="./assets/img/train-right.png" alt="train-right">
         </div>
+      </div>
     </header>
-    <p class="mimic">なんと宝箱はミミックだった！</p>
-    <p class="slime">スライムの色は水色</p>
-    <a href="https://www.google.co.jp/" target="_blank">googleはここ</a>
-    <form action="post"></form>
+    <!-- /header -->
+
+    <!-- main -->
+    <main>
+      <!-- ハンバーガー -->
+      <div class="hamburger tb-on">
+        <div class="hamburger__inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- sp-menu -->
+      <div class="l-sp-menu">
+        <!-- sns -->
+        <div class="c-sns">
+          <p class="c-sns__follow">FOLLOW ME</p>
+          <span class="c-sns__line"></span>
+          <div class="c-sns__instagram">
+            <img src="./assets/img/sns-instagram.png" alt="sns-instagram">
+          </div>
+          <div class="c-sns__threads">
+            <img src="./assets/img/sns-threads.png" alt="sns-threads">
+          </div>
+          <div class="c-sns__x">
+            <img src="./assets/img/sns-x.png" alt="sns-x">
+          </div>
+        </div>
+        <!-- メニューリスト -->
+        <div class="l-sp-menu__content">
+          <!-- ロゴ -->
+          <div class="l-sp-menu__logo">
+            <img src="./assets/img/logo-hoshitetsu.png" alt="logo-hoshitetsu">
+          </div>
+
+        <!-- menu -->
+        <ul class="l-sp-menu__item">
+          <li class="l-sp-menu__list"><a href="#">ほしてつについて</a></li>
+          <li class="l-sp-menu__list"><a href="#">鉄道日記</a></li>
+          <li class="l-sp-menu__list"><a href="#">特急列車</a></li>
+          <li class="l-sp-menu__list"><a href="#">ラッピング</a></li>
+          <li class="l-sp-menu__list"><a href="#">JR電車</a></li>
+          <li class="l-sp-menu__list"><a href="#">私鉄電車</a></li>
+        </ul>
+
+        </div>
+      </div>
+
+      <!-- fv+menu -->
+      <div class="l-content">
+
+        <!-- menu -->
+        <ul class="l-pc-menu pc-on">
+          <li class="l-pc-menu__list"><a href="#">ほしてつについて</a></li>
+          <li class="l-pc-menu__list"><a href="#">鉄道日記</a></li>
+          <li class="l-pc-menu__list"><a href="#">特急列車</a></li>
+          <li class="l-pc-menu__list"><a href="#">ラッピング</a></li>
+          <li class="l-pc-menu__list"><a href="#">JR電車</a></li>
+          <li class="l-pc-menu__list"><a href="#">私鉄電車</a></li>
+        </ul>
+        <!-- fv -->
+        <div class="top-fv">
+          <div class="top-fv__slider">
+            <img src="./assets/img/fv-02.jpg" alt="fv-01">
+            <img src="./assets/img/fv-03.jpg" alt="fv-01">
+            <img src="./assets/img/fv-04.jpg" alt="fv-01">
+            <img src="./assets/img/fv-01.jpg" alt="fv-01">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- content -->
+      <div class="l-top-content">
+        <!-- ようこそ -->
+        <section class="p-welcome" id="welcome">
+          <h2 class="c-top-title">ほしてつの鉄道写真ミュージアムにようこそ</h2>
+          <!-- 概要 -->
+          <div class="p-welcome__inner">
+            <p class="p-welcome__greeting">鉄道写真歴15年の発達障害持ち<br class="tb-on">鉄道ファンによる鉄道写真の<br class="sp-on">総合コンテンツサイト！</p>
+            <div class="c-top-character -on">
+              <img src="./assets/img/top-chara.png" alt="top-chara">
+            </div>
+            <p class="p-welcome__text">〝鉄道写真の総合コンテンツ〟と書いてある通り、<br class="tb-on">私が撮影した写真を紹介していきます。<br>
+              鉄道図鑑、ブログ、鉄道写真館と…<br class="tb-on">今までにないような鉄道写真サイトとなってます。<br>
+              ぜひ私ほしてつの15年分の想いを<br class="tb-on">詰め込んだ鉄道写真コンテンツをご覧ください！</p>
+            <p class="p-welcome__name">ほしてつより</p>
+          </div>
+          <div class="c-top-character pc-on">
+            <img src="./assets/img/top-chara.png" alt="top-chara">
+          </div>
+        </section><!-- /ようこそ -->
+
+        <!-- おすすめ -->
+        <seciton class="p-pickup" id="pickup">
+          <div class="p-pickup__bg">
+            <div class="p-pickup__inner">
+              <!-- blog -->
+              <div class="pc-on">
+                <div class="p-pickup__contents">
+                  <!-- blog-content -->
+                  <a href="#" class="p-pickup__content">
+                    <div class="p-pickup__img">
+                      <img src="./assets/img/thumbnail.png" alt="thumbnail">
+                    </div>
+                    <div class="p-pickup__ticket">
+                      <div class="p-pickup__ticket__inner">
+                        <h3 class="p-pickup__title">タイトルタイトルタイトル</h3>
+                        <div class="p-pickup__arrow">
+                          <img src="./assets/img/pickup-arrow.png" alt="pickup-arrow">
+                        </div>
+                      </div>
+                      <p class="p-pickup__date">2024.00.00</p>
+                    </div>
+                  </a>
+                  <!-- blog-content -->
+                  <a href="#" class="p-pickup__content">
+                    <div class="p-pickup__img">
+                      <img src="./assets/img/thumbnail.png" alt="thumbnail">
+                    </div>
+                    <div class="p-pickup__ticket">
+                      <div class="p-pickup__ticket__inner">
+                        <h3 class="p-pickup__title">タイトルタイトルタイトル</h3>
+                        <div class="p-pickup__arrow">
+                          <img src="./assets/img/pickup-arrow.png" alt="pickup-arrow">
+                        </div>
+                      </div>
+                      <p class="p-pickup__date">2024.00.00</p>
+                    </div>
+                  </a>
+                  <!-- タイトル -->
+                  <h2 class="c-top-title">本日のおすすめ</h2>
+                </div>
+              </div>
+              <div class="tb-on">
+                <div class="p-pickup__contents">
+                  <!-- blog-content -->
+                  <a href="#" class="p-pickup__content">
+                    <div class="p-pickup__img">
+                      <img src="./assets/img/thumbnail.png" alt="thumbnail">
+                    </div>
+                    <div class="p-pickup__ticket">
+                      <div class="p-pickup__ticket__inner">
+                        <h3 class="p-pickup__title">タイトルタイトルタイトル</h3>
+                        <div class="p-pickup__arrow">
+                          <img src="./assets/img/pickup-arrow.png" alt="pickup-arrow">
+                        </div>
+                      </div>
+                      <p class="p-pickup__date">2024.00.00</p>
+                    </div>
+                  </a>
+                  <!-- タイトル -->
+                  <h2 class="c-top-title">本日のおすすめ</h2>
+                </div></div>
+              <!-- ボタン -->
+              <a href="#" class="p-pickup__more"><span>もっと見る</span></a>
+  
+            </div>
+
+          </div>
+          
+        </seciton><!-- /おすすめ -->
+
+        <!-- 新着情報 -->
+        <section class="p-news" id="news">
+          <!-- inner -->
+          <div class="p-news__inner">
+            <!-- タイトル -->
+            <h2 class="c-top-title">新着情報</h2>
+
+            <div class="p-news__bg">
+              <!-- content -->
+              <div class="p-news__content">
+                <ul class="p-news__lists">
+                  <!-- 列車情報 -->
+                  <li class="p-news__list">
+                    <a href="#">
+                      <div class="p-news__up">
+                        <p class="p-news__number"><span>1</span></p>
+                        <p class="p-news__date">2024.00.00</p>
+                        <p class="p-news__category ltd-exp">特急列車</p>
+                      </div>
+                      <div class="p-news__down">
+                        <p class="p-news__title">お知らせお知らせお知らせお知らせ</p>
+                      </div>
+                    </a>
+                  </li><!-- /列車情報 -->
+                  <!-- 列車情報 -->
+                  <li class="p-news__list">
+                    <a href="#">
+                      <div class="p-news__up">
+                        <p class="p-news__number"><span>2</span></p>
+                        <p class="p-news__date">2024.00.00</p>
+                        <p class="p-news__category jr-train">JR電車</p>
+                      </div>
+                      <div class="p-news__down">
+                        <p class="p-news__title">お知らせお知らせお知らせお知らせ</p>
+                      </div>
+                    </a>
+                  </li><!-- /列車情報 -->
+                  <!-- 列車情報 -->
+                  <li class="p-news__list">
+                    <a href="#">
+                      <div class="p-news__up">
+                        <p class="p-news__number"><span>3</span></p>
+                        <p class="p-news__date">2024.00.00</p>
+                        <p class="p-news__category shitetsu">私鉄電車</p>
+                      </div>
+                      <div class="p-news__down">
+                        <p class="p-news__title">お知らせお知らせお知らせお知らせ</p>
+                      </div>
+                    </a>
+                  </li><!-- /列車情報 -->
+                  <!-- 列車情報 -->
+                  <li class="p-news__list">
+                    <a href="#">
+                      <div class="p-news__up">
+                        <p class="p-news__number"><span>4</span></p>
+                        <p class="p-news__date">2024.00.00</p>
+                        <p class="p-news__category wrapping">ラッピング</p>
+                      </div>
+                      <div class="p-news__down">
+                        <p class="p-news__title">お知らせお知らせお知らせお知らせ</p>
+                      </div>
+                    </a>
+                  </li><!-- /列車情報 -->
+                </ul>
+              </div>
+            </div><!-- content -->
+
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer class="l-footer">
+      <!-- 電車 -->
+      <div class="l-footer__slice">
+        <div class="l-footer__train" id="footer-train">
+          <img src="./assets/img/train-left.png" alt="train-left">
+        </div>
+      </div>
+
+      <!-- コンテンツ -->
+      <div class="l-footer__content">
+        <!-- sns(PC) -->
+        <div class="c-sns pc-on">
+          <p class="c-sns__follow">FOLLOW ME</p>
+          <span class="c-sns__line"></span>
+          <div class="c-sns__instagram">
+            <img src="./assets/img/sns-instagram.png" alt="sns-instagram">
+          </div>
+          <div class="c-sns__threads">
+            <img src="./assets/img/sns-threads.png" alt="sns-threads">
+          </div>
+          <div class="c-sns__x">
+            <img src="./assets/img/sns-x.png" alt="sns-x">
+          </div>
+        </div>
+
+        <!-- logo -->
+        <div class="l-footer__logo">
+          <img src="./assets/img/logo-hoshitetsu.png" alt="logo-hoshitetsu">
+        </div>
+
+        <!-- menu -->
+        <ul class="l-footer__menu">
+          <li class="l-footer__menu__item"><a href="#">ほしてつについて</a></li>
+          <li class="l-footer__menu__item"><a href="#">鉄道日記</a></li>
+          <li class="l-footer__menu__item"><a href="#">特急列車</a></li>
+          <li class="l-footer__menu__item"><a href="#">ラッピング</a></li>
+          <li class="l-footer__menu__item"><a href="#">JR電車</a></li>
+          <li class="l-footer__menu__item"><a href="#">私鉄電車</a></li>
+        </ul>
+        <!-- sns(タブレット) -->
+        <div class="l-footer__sns tb-on">
+          <div class="l-footer__sns__instagram">
+            <img src="./assets/img/sns-instagram.png" alt="sns-instagram">
+          </div>
+          <span class="l-footer__sns__line"></span>
+          <div class="l-footer__sns__threads">
+            <img src="./assets/img/sns-threads.png" alt="sns-threads">
+          </div>
+          <span class="l-footer__sns__line"></span>
+          <div class="l-footer__sns__x">
+            <img src="./assets/img/sns-x.png" alt="sns-x">
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- copy -->
+      <p class="l-footer__copy">©hoshitetsu 2024</p>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jquery/js --><!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<!-- slickのJavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    
 </body>
-<style>
-    .mimic{
-       color: green;
-    }
-
-    .slime{
-        color: aqua;
-    }
-
-    .header {
-        width: 100%;
-        height: 100px;
-        border: solid 1px black;
-    }
-
-    .header__wrap {
-        display: flex;
-        justify-content: space-between;
-        line-height: 50px;
-    }
-
-    .header__name {
-        font-size: 30px;
-    }
-
-    .header__list {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-    }
-
-    .header__item {
-        margin-left: 20px;
-        font-size: 12px;
-    }
-
-
-</style>
 </html>

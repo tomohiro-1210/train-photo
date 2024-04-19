@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ball Animation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="inner-2">
+  <div class="container-2">
+    <div id="ball-2">
+      <img src="./assets/img/train-right.png" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- css -->
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .inner-2{
+    margin-right: 50px;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .container-2 {
+    position: relative;
+    width: 130vw;
+    height: 200px;
+    margin-top: 100px;
+    right: 50px;
+    overflow: hidden;
+    background-color: #FFDDFA;
+    transform: rotate(3deg);
+  }
+
+  #ball-2 {
+    position: absolute;
+    width: 233;
+    height: 84;
+    bottom: 0;
+    left: 0;
+    animation: ballAnimation 6s linear infinite;
+    z-index: 100;
+  }
+  #ball-2 img{
+    padding-top: 100px;
+    width: 40%;
+    height: 40%;
+    transform: rotate(5deg);
+  }
+
+  @keyframes ballAnimation {
+    0% {
+      bottom: 0;
+      left: 0;
+    }
+    100% {
+      bottom: 0%;
+      left: 90%;
+    }
+  }
+</style>
+
+<!-- js -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var ball = document.getElementById('ball');
+    ball.style.bottom = '0';
+    ball.style.left = '0';
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>

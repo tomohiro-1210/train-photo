@@ -1,0 +1,159 @@
+@use "../common/variable" as var;
+
+
+// hamburger
+    .hamburger{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var.$pink;
+
+        &__inner{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        span{
+            display: block;
+            width: 36px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: var.$water-blue;
+            transition: all 0.3s;
+        }
+        span:nth-child(2n){
+            margin: 8px 0;
+        }
+    }
+    .hamburger.open{
+        background-color: var.$water-blue;
+        span{
+            background-color: var.$pink;
+        }
+        span:nth-child(1n){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        span:nth-child(2n){
+            opacity: 0;
+            margin: 8px 0;
+        }
+        span:nth-child(3n){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+    }
+
+.l-pc-menu {
+    width: 25%;
+    height: max-content;
+    padding: 100px 0;
+    background-color: var.$water-blue;
+    &__list {
+        margin: 0 auto 34px;
+        a{
+            width: fit-content;
+            font-size: 24px;
+            display: block;
+            margin: 0 auto 5px;
+            color: var.$black;
+            border-bottom: solid 2px var.$yellow;
+            transform:scale(1.0);
+            transition: all 0.3s;
+        }
+        a:hover{
+            transform:scale(1.1);
+        }
+    }
+    &__list:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .l-pc-menu {
+        width: 16%;
+        &__list {
+            a{
+                font-size:12px;
+            }
+        }
+    }
+}
+
+// sp-menu
+.l-sp-menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: var.$water-blue;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    z-index: 9000;
+
+    .c-sns{
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+    
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    // ロゴ
+    &__logo {
+        width: 80px;
+        height: 92px;
+        margin: 0 auto;
+    }
+
+    // メニュー
+    &__item {
+        margin-top: 30px;
+
+    }
+    &__list {
+        margin-top: 25px;
+        a{
+            display: block;
+            font-size: 18px;
+            text-align: center;
+            color: var.$black;
+        }
+    }
+    
+}
+.l-sp-menu.open{
+    display: block;
+}
+// タブレットサイズ
+@media screen and (max-width:600px) {
+    // sp-menu
+    .l-sp-menu {
+    
+        .c-sns{
+            left: 40px;
+        }
+        
+    }
+  }
+
+
+

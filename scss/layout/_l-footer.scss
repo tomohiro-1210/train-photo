@@ -1,0 +1,252 @@
+@use "../common/variable" as var;
+
+.l-footer {
+    background-color: var.$water-blue;
+    width: 100%;
+    position: relative;
+
+    // 電車
+    &__slice {
+        position: absolute;
+        width: 99.9vw;
+        height: 100px;
+        margin-top: -50px;
+        overflow: hidden;
+        background-color: var.$white;
+        transform: rotate(3deg);
+    }
+    
+    &__train {
+        position: absolute;
+        width: 200px;
+        height: 63px;
+        bottom: 0;
+        left: 0;
+        animation: footer-trainAnimation 9s linear infinite;
+        z-index: 100;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @keyframes footer-trainAnimation {
+        0% {
+          bottom: 0;
+          left: 100%;
+        }
+        100% {
+          bottom: 0%;
+          left: 0%;
+        }
+    }
+    
+       
+    &__content {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // ロゴ
+    &__logo{
+      width: 143px;
+      height: 165px;
+      margin-left: 40px;
+    }
+
+    // メニュー
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 105px;
+
+    }
+    &__menu__item {
+        margin-right: 45px;
+        a{
+            font-size: 15px;
+            color: var.$black;
+            transform:scale(1.0);
+            transition: all 0.3s;
+        }
+        a:hover{
+            transform:scale(1.1);
+        }
+    }
+    &__menu__item:last-child{
+        margin-right: 0;
+    }
+
+    // 著作
+    &__copy {
+        font-size: 15px;
+        text-align: center;
+        color: var.$black;
+        padding: 10px 0 33px;
+    }
+
+}
+
+// タブレット
+@media screen and (max-width:920px) {
+    .l-footer {
+        
+        &__content {
+            padding-top: 60px;
+            display: block;
+        }
+
+        // 電車    
+        &__slice {
+            position: absolute;
+            width: 99vw;
+            height: 70px;
+            margin-top: -30px;
+            overflow: hidden;
+            background-color: var.$white;
+            transform: rotate(3deg);
+        }    
+        &__train {
+            width: 150px;
+            height: 45px;
+            animation: footer-trainAnimation 6s linear infinite;
+        }
+    
+        // ロゴ
+        &__logo{
+          width: 143px;
+          height: 165px;
+          margin: 0 auto 30px;
+        }
+    
+        // メニュー
+        &__menu {
+            margin: 0 0 0 20px;
+    
+        }
+        &__menu__item {
+            margin-right: 30px;
+            a{
+                font-size: 15px;
+                color: var.$black;
+                transform:scale(1.0);
+                transition: all 0.3s;
+            }
+            a:hover{
+                transform:scale(1.1);
+            }
+        }
+        &__menu__item:last-child{
+            margin-right: 0;
+        }
+
+    
+        // sns
+        &__sns {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__line{
+                display: block;
+                width: 20px;
+                height: 2px;
+                margin-left: 15px;
+                background-color: var.$yellow;
+            }
+    
+            &__instagram,
+            &__threads,
+            &__x {
+                width: 35px;
+                height: 35px;
+                margin-left: 15px;
+              }
+        }
+    
+        // 著作
+        &__copy {
+            font-size: 15px;
+            text-align: center;
+            color: var.$black;
+            padding: 30px 0 33px;
+        }
+    
+    }
+}
+// スマホ
+@media screen and (max-width:600px) {
+    .l-footer {
+        
+        &__content {
+            padding-top: 70px;
+            display: block;
+        }
+    
+        // ロゴ
+        &__logo{
+          width: 100px;
+          height: 115px;
+          margin: 0 auto 50px;
+        }
+
+        // 電車
+        &__slice {
+            position: absolute;
+            width: 100vw;
+            height: 50px;
+            margin-top: -30px;
+            overflow: hidden;
+            background-color: var.$white;
+            transform: rotate(3deg);
+        }
+        
+        &__train {
+            width: 100px;
+            height: 32px;
+            animation: footer-trainAnimation 4s linear infinite;
+        }
+    
+        // メニュー
+        &__menu {
+            flex-wrap: wrap;
+            margin: 0 0 0 30px;
+    
+        }
+        &__menu__item {
+            width: calc(50% - 25px);
+            margin-right: 50px;
+            a{
+                text-align: right;
+            }
+            a:hover{
+                transform:scale(1.1);
+            }
+        }
+        &__menu__item:nth-child(2n){
+            margin-right: 0;
+            a{
+                text-align: left;
+            }
+        }
+        &__menu__item{
+            margin-top: 20px;
+            
+        }
+        &__menu__item:last-child{
+            margin-right: 0;
+        }
+    
+        // 著作
+        &__copy {
+            font-size: 15px;
+            text-align: center;
+            color: var.$black;
+            padding: 30px 0 10px;
+        }
+    
+    }
+}

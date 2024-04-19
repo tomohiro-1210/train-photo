@@ -1,4 +1,16 @@
-header{
-    color: aqua;
-    font-size: 12px;
-}
+@charset "UTF-8";
+
+// commonフォルダ
+@use './common/reset';
+@use './common/common';
+
+// layoutフォルダ
+@use './layout/l-header';
+@use './layout/l-footer';
+@use './layout/l-pc-menu';
+
+// projectフォルダ
+@use './project/index';
+@use './project/train';
+@use './project/blog';
+
