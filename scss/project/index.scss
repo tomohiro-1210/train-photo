@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     //　間隔制御
-    width: calc(84% - 40px);
+    width: calc(100% - 40px);
     margin-bottom: 100px;
     margin-left: auto;
 
@@ -129,8 +129,8 @@
 }
 
 &__inner{
-    width: calc(84% - 40px);
-    margin-left: auto;
+    width: calc(100% - 40px);
+    margin: 0 auto;
     padding-bottom: 20px;
 }
 &__contents {
@@ -144,7 +144,7 @@
 &__content {
     width: 310px;
     height: max-content;
-    margin-right: 10%;
+    margin-right: 2%;
 }
 &__img {
     margin-bottom: 10px;

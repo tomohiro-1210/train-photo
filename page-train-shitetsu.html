@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+
+    <!-- googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>ほしてつの鉄道ミュージアム 私鉄電車一覧</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+      <!-- ロゴ -->
+      <h1 class="l-header__logo">
+        <img src="./assets/img/logo-hoshitetsu.png" alt="logo-hoshitetsu">
+      </h1>
+      <!-- 電車 -->
+      <div class="l-header__container">
+        <div class="l-header__train" id="header-train">
+          <img src="./assets/img/train-right.png" alt="train-right">
+        </div>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <main>
+      <!-- ハンバーガー -->
+      <div class="hamburger tb-on">
+        <div class="hamburger__inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- sp-menu -->
+      <div class="l-sp-menu">
+        <!-- sns -->
+        <div class="c-sns">
+          <p class="c-sns__follow">FOLLOW ME</p>
+          <span class="c-sns__line"></span>
+          <div class="c-sns__instagram">
+            <img src="./assets/img/sns-instagram.png" alt="sns-instagram">
+          </div>
+          <div class="c-sns__threads">
+            <img src="./assets/img/sns-threads.png" alt="sns-threads">
+          </div>
+          <div class="c-sns__x">
+            <img src="./assets/img/sns-x.png" alt="sns-x">
+          </div>
+        </div>
+        <!-- メニューリスト -->
+        <div class="l-sp-menu__content">
+          <!-- ロゴ -->
+          <div class="l-sp-menu__logo">
+            <img src="./assets/img/logo-hoshitetsu.png" alt="logo-hoshitetsu">
+          </div>
+
+        <!-- menu -->
+        <ul class="l-sp-menu__item">
+          <li class="l-sp-menu__list"><a href="#">ほしてつについて</a></li>
+          <li class="l-sp-menu__list"><a href="#">鉄道日記</a></li>
+          <li class="l-sp-menu__list"><a href="#">特急列車</a></li>
+          <li class="l-sp-menu__list"><a href="#">JR電車</a></li>
+          <li class="l-sp-menu__list"><a href="#">私鉄電車</a></li>
+          <li class="l-sp-menu__list"><a href="#">ラッピング</a></li>
+        </ul>
+
+        </div>
+      </div>
+
+      <!-- menu + content -->
+      <div class="l-content top">
+
+        <!-- menu -->
+        <ul class="l-pc-menu pc-on">
+          <li class="l-pc-menu__list"><a href="#">ほしてつについて</a></li>
+          <li class="l-pc-menu__list"><a href="#">鉄道日記</a></li>
+          <li class="l-pc-menu__list"><a href="#">特急列車</a></li>
+          <li class="l-pc-menu__list"><a href="#">JR電車</a></li>
+          <li class="l-pc-menu__list"><a href="#">私鉄電車</a></li>
+          <li class="l-pc-menu__list"><a href="#">ラッピング</a></li>
+        </ul>
+
+        <!-- contents -->
+        <div class="p-train page-content">
+          <div class="p-train__content">
+            <!-- title -->
+            <h2 class="c-page-title shitetsu"><span class="fo-shitetsu">私</span>鉄電車<img src="./assets/img/archive-chara.png" alt=""></h2>
+
+            <!-- 電車一覧（特急） -->
+            <div class="p-train__lists">
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+              <!-- 電車コンテンツ -->
+              <a href="#" class="p-train__list">
+                <div class="p-train__list__img">
+                  <img src="./assets/img/fv-04.jpg" alt="train">
+                </div>
+                <div class="p-train__list__content">
+                  <img src="./assets/img/arrow-down.png" alt="arrow-down" class="p-train__list__down">
+                  <p class="p-train__list__company">鉄道会社</p>
+                  <p class="p-train__list__series">形式名形式名形式名</p>
+                  <p class="p-train__list__button"><span>詳しく見る</span></p>
+                </div>
+              </a>
+
+            </div>
+            <!-- /電車一覧（特急） -->
+
+            <!-- pager -->
+            <div class="c-pager">
+              <a href="#" class="c-pager__number nobg">
+                <img src="./assets/img/page-left.png" alt="">
+              </a>
+              <a href="#" class="c-pager__number">
+                <span>1</span>
+              </a>
+              <a href="#" class="c-pager__number">
+                <span>2</span>
+              </a>
+              <a href="#" class="c-pager__number">
+                <span>3</span>
+              </a>
+              <a href="#" class="c-pager__number">
+                <span>…</span>
+              </a>
+              <a href="#" class="c-pager__number">
+                <span>10</span>
+              </a>
+              <a href="#" class="c-pager__number nobg">
+                <img src="./assets/img/page-right.png" alt="">
+              </a>
+            </div>
+            <!-- /pager -->
+            
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer class="l-footer">
+      <!-- 電車 -->
+      <div class="l-footer__slice">
+        <div class="l-footer__train" id="footer-train">
+          <img src="./assets/img/train-left.png" alt="train-left">
+        </div>
+      </div>
+
+      <!-- コンテンツ -->
+      <div class="l-footer__content">
+        <!-- sns(PC) -->
+        <div class="c-sns pc-on">
+          <p class="c-sns__follow">FOLLOW ME</p>
+          <span class="c-sns__line"></span>
+          <div class="c-sns__instagram">
+            <img src="./assets/img/sns-instagram.png" alt="sns-instagram">
+          </div>
+          <div class="c-sns__threads">
+            <img src="./assets/img/sns-threads.png" alt="sns-threads">
+          </div>
+          <div class="c-sns__x">
+            <img src="./assets/img/sns-x.png" alt="sns-x">
+          </div>
+        </div>
+
+        <!-- logo -->
+        <div class="l-footer__logo">
+          <img src="./assets/img/logo-hoshitetsu.png" alt="logo-hoshitetsu">
+        </div>
+
+        <!-- menu -->
+        <ul class="l-footer__menu">
+          <li class="l-footer__menu__item"><a href="#">ほしてつについて</a></li>
+          <li class="l-footer__menu__item"><a href="#">鉄道日記</a></li>
+          <li class="l-footer__menu__item"><a href="#">特急列車</a></li>
+          <li class="l-footer__menu__item"><a href="#">JR電車</a></li>
+          <li class="l-footer__menu__item"><a href="#">私鉄電車</a></li>
+          <li class="l-footer__menu__item"><a href="#">ラッピング</a></li>
+        </ul>
+        <!-- sns(タブレット) -->
+        <div class="l-footer__sns tb-on">
+          <div class="l-footer__sns__instagram">
+            <img src="./assets/img/sns-instagram.png" alt="sns-instagram">
+          </div>
+          <span class="l-footer__sns__line"></span>
+          <div class="l-footer__sns__threads">
+            <img src="./assets/img/sns-threads.png" alt="sns-threads">
+          </div>
+          <span class="l-footer__sns__line"></span>
+          <div class="l-footer__sns__x">
+            <img src="./assets/img/sns-x.png" alt="sns-x">
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- copy -->
+      <p class="l-footer__copy">©hoshitetsu 2024</p>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jquery/js --><!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<!-- slickのJavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    
+</body>
+</html>

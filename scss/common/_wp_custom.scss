@@ -1,0 +1,70 @@
+/* wpカスタマイズ */
+.p-diary__wp strong{
+    font-weight: bold;
+    }
+    .p-diary__wp .has-inline-color.has-vivid-red-color{
+    color: #CF2E2E;
+    }
+    .p-diary__wp .has-inline-color.has-pale-pink-color{
+    color: #F78DA7;
+    }
+    .p-diary__wp .has-inline-color.has-white-color{
+    color: #fff;
+    }
+    .p-diary__wp .has-inline-color.has-cyan-bluish-gray-color{
+    color: #ABB8C3;
+    }
+    .p-diary__wp .has-inline-color.has-pale-cyan-blue-color{
+    color: #8ED1FC;
+    }
+    .p-diary__wp .has-inline-color.has-luminous-vivid-orange-color{
+    color: #FF6900;
+    }
+    .p-diary__wp .has-inline-color.has-luminous-vivid-amber-color{
+    color: #FCB900;
+    }
+    .p-diary__wp .has-inline-color.has-vivid-cyan-blue-color{
+    color: #0693E3;
+    }
+    .p-diary__wp .has-inline-color.has-light-green-cyan-color{
+    color: #7BDCB5;
+    }
+    .p-diary__wp .has-inline-color.has-vivid-green-cyan-color{
+    color: #00D084;
+    }
+    .p-diary__wp .has-inline-color.has-vivid-purple-color{
+    color: #9B51E0;
+    }
+
+
+/* 文字の位置 */
+.p-diary__wp .has-text-align-center{
+	text-align: center;
+}
+.p-diary__wp .has-text-align-right{
+	text-align: right;
+}
+
+
+/* youtube */
+.p-diary__wp .wp-block-embed.is-type-video.is-provider-youtube.wp-block-embed-youtube.wp-embed-aspect-16-9.wp-has-aspect-ratio{
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto 20px;
+	height: fit-content;
+}
+.wp-block-embed__wrapper iframe {
+	width: 100%;
+}
+
+@media screen and (max-width:768px) {
+/* youtube */
+.p-diary__wp .wp-block-embed.is-type-video.is-provider-youtube.wp-block-embed-youtube.wp-embed-aspect-16-9.wp-has-aspect-ratio{
+	max-width: 100%;
+	width:100%;
+	height: fit-content;
+}
+.wp-block-embed__wrapper iframe {
+	width: 100%;
+}
+}

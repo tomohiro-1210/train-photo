@@ -3,14 +3,15 @@
 // commonフォルダ
 @use './common/reset';
 @use './common/common';
+@use './common/wp_custom';
 
 // layoutフォルダ
 @use './layout/l-header';
 @use './layout/l-footer';
 @use './layout/l-pc-menu';
 
-// projectフォルダ
+// projectフォルダssssss
 @use './project/index';
 @use './project/train';
-@use './project/blog';
+@use './project/diary';
 

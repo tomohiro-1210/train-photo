@@ -43,6 +43,25 @@
   font-size: 17px;
   margin-top: 10px;
 }
+.p-diary__wp {
+  max-width: 700px;
+  width: calc(100% - 64px);
+  margin: 0 auto;
+  padding-top: 30px;
+  background-color: rgba(0, 71, 222, 0.1);
+}
+.p-diary__wp p {
+  color: #151515;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.p-diary__wp img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
 
 @media screen and (max-width: 920px) {
   .p-diary__list {
@@ -112,4 +131,11 @@
     margin-top: 10px;
   }
 }
-/*# sourceMappingURL=blog.css.map */
+@media screen and (max-width: 600px) {
+  .p-diary__wp p {
+    color: #151515;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+/*# sourceMappingURL=diary.css.map */
