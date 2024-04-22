@@ -1,0 +1,10 @@
+.banner {
+  max-width: 440px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+.banner img {
+  box-shadow: 5px 5px 2px rgba(51, 51, 51, 0.8);
+  border-radius: 5px;
+}
+/*# sourceMappingURL=zukan_company.css.map */

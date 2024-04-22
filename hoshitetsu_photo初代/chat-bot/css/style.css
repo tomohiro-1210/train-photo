@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+body {
+    background-color: #fff;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1 {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+    background-color: #517d99;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+}
+#chat-field {
+    height: 100vh;
+    padding: 70px 0 140px 0;
+    background-color: #b4cce3;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+#chat-field::-webkit-scrollbar {
+    display: none;
+}
+#chat-ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+#chat-ul li {
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto 10px 10px;
+    display: inline-block;
+    border-radius: 6px;
+    min-height: 30px;
+    max-width: 220px;
+    padding: 7px  18px 7px 13px;
+    line-height: 1.7em;
+}
+#chat-ul li::before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    left: -8px;
+    transform: rotate(45deg) translateY(-50%);
+    background-color: #fff;
+}
+#chat-ul li:nth-child(odd){
+    opacity: 0;
+    animation: fadeIn 0.3s linear 0.3s 1 forwards;
+}
+#chat-ul li:nth-child(even){
+    margin: 0 10px 10px auto;
+    background-color: #a4e496;
+}
+#chat-ul li:nth-child(even)::before{
+    left: calc(100% - 8px);
+    background-color: #a4e496;
+}
+#input-field {
+    position: fixed;
+    width: 100vw;
+    overflow: scroll;
+    bottom: 35px;
+    margin: 0 auto;
+}
+#select-list {
+    display: flex;
+    margin: 0 10px;
+    width: max-content;
+    transform: translateY(100%);
+    animation: slideIn 0.3s linear 0.3s 1 forwards;
+}
+#select-list.slideOut {
+    transform: translateY(0%);
+    animation: slideOut 0.3s linear 0.3s 1 forwards;
+}
+#select-list li {
+    background: #686262;
+    color: #fff;
+    padding: 4px 13px 5px 13px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+#select-list li:last-child{
+    margin-right: 0;
+
+}
+
+@keyframes slideIn{
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes slideOut{
+    100%{
+        transform: translateY(100%);
+    }
+}
+@keyframes fadeIn{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    100%{
+        transform: translateY(100%);
+    }
+}
+@keyframes slideIn{
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes slideOut{
+    100%{
+        transform: translateY(100%);
+    }
+}

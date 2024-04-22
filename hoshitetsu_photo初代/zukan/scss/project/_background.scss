@@ -1,0 +1,81 @@
+
+// 背景画
+// 通常時
+body{
+    background: url(../img/bgImg/zukan_PC.png);
+    background-size: contain;
+    background-color:rgba(#dedede, 0.7);
+    background-blend-mode:lighten;
+
+}
+// 私鉄の時
+body.shitetsu{
+    background: url(../img/bgImg/shitetsu_zukan_PC.png);
+    background-size: contain;
+    background-color:rgba(#dedede, 0.7);
+    background-blend-mode:lighten;
+}
+// JRのとき
+body.JR{
+    background: url(../img/bgImg/JR_zukan_PC.png);
+    background-size: contain;
+    background-color:rgba(#dedede, 0.7);
+    background-blend-mode:lighten;
+}
+
+
+
+@media screen and (max-width:920px) {
+    // 通常時
+    body{
+        background: url(../img/bgImg/zukan_Tb.png);
+        background-size: contain;
+        background-color:rgba(#dedede, 0.7);
+        background-blend-mode:lighten;
+
+    }
+    // 私鉄の時
+        body.shitetsu{
+        background: url(../img/bgImg/shitetsu_zukan_Tb.png);
+        background-size: contain;
+        background-color:rgba(#dedede, 0.7);
+        background-blend-mode:lighten;
+    }
+    // JRの時
+        body.JR{
+        background: url(../img/bgImg/JR_zukan_Tb.png);
+        background-size: contain;
+        background-color:rgba(#dedede, 0.7);
+        background-blend-mode:lighten;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    // 通常時
+    body{
+        background: url(../img/bgImg/zukan_SP.png);
+        background-size: contain;
+        background-color:rgba(#dedede, 0.7);
+        background-blend-mode:lighten;
+
+
+    }
+    // 私鉄のとき
+    body.shitetsu{
+        background: url(../img/bgImg/shitetsu_zukan_SP.png);
+        background-size: contain;
+        background-color:rgba(#dedede, 0.7);
+        background-blend-mode:lighten;
+    }
+    // JRのとき
+    body.JR{
+        background: url(../img/bgImg/JR_zukan_SP.png);
+        background-size: contain;
+        background-color:rgba(#dedede, 0.7);
+        background-blend-mode:lighten;
+    }
+
+
+}
+

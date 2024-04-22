@@ -1,0 +1,249 @@
+html{
+    font-size: 16px;
+    color: #000;
+    overflow-x: hidden;
+    background: url();
+    font-weight: bold;
+}
+
+// 共通コーディング
+body{
+    
+    overflow-x: hidden;
+}
+.commonWidth{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+img{
+	width: 100%;
+    vertical-align: bottom;
+}
+
+a{
+	text-decoration: none;
+}
+
+.linkRoute{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: bold;
+    &__top{
+        padding-right: 10px;
+        color: #081BBB;
+    }
+    &__right{
+        padding-right: 10px;
+    }
+}
+
+.bg80{
+    background:rgba(#0088c2, 0.95);
+}
+
+// ページタイトル
+.c-page_title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 40px 20px;
+    font-weight: bold;
+    color: #081BBB;
+}
+
+// セクションタイトル
+.c-sectionTitle{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    border-bottom: solid 5px #081BBB;
+    padding: 10px 20px;
+}
+
+// 鉄道車両ピックアップ
+.p-trainList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10px;
+    &__item{
+        margin: 10px;
+        box-shadow: 5px 5px 2px rgba($color: #333, $alpha: 0.8);
+    }
+    &__wrap{
+        background: #00ABE1;
+        padding-bottom: 10px;
+    }
+    &__series{
+        padding: 10px 10px 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: bold;
+        line-height: 1.5rem;
+        height: calc(1rem * 2);
+    }
+}
+
+// ボタン
+.c-btn a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 10px 25px 10px 25px;
+    margin: 10px 10px 0;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #081BBB;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    z-index:0;
+    overflow: hidden;
+}
+.c-btn a:hover{
+    
+    color: #313131;
+}
+.c-btn a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #fff;
+    transition: .3s;
+    left:0;
+}
+.c-btn a:hover:after {
+    width: 100%;
+    z-index: -1;
+}
+
+
+// ローダー
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: #0088c2;
+    text-align: center;
+    .kvArea {
+      width: 50%;
+    }
+    &__wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__inner {
+      text-align: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &__img {
+      animation-name: fadeUpAnime;
+      animation-duration: 1.2s;
+      animation-delay: 1.2s;
+      animation-fill-mode: forwards;
+      opacity: 1;
+    }
+}
+@keyframes fadeUpAnime {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+}
+
+@media screen and (max-width:920px) {
+    
+    .p-trainList{
+        &__series{
+            font-size: 1rem;
+        }
+    }
+
+    // ボタン
+    .c-btn a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    // リンクルート
+    .linkRoute{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        &__top{
+            padding-right: 6px;
+        }
+        &__right{
+            padding-right: 6px;
+        }
+        &__nowPage{
+            border-bottom: solid 1px #333;
+        }
+    }
+
+        // ページタイトル
+    .c-page_title{
+        font-size: 2rem;
+    }
+
+    // セクションタイトル
+    .c-sectionTitle{
+        font-size: 1.2rem;
+        margin-top: 60px;
+    }
+
+        // 鉄道車両リスト
+    .p-trainList{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 8px;
+        &__item{
+            margin: 8px;
+        }
+        &__series{
+            font-size: 0.75rem;
+        }
+    }
+    
+    // marginなどの数値制御
+    .mt-0{
+        margin-top: 0;
+    }
+    .mt-20{
+        margin-top: 20px;
+    }
+
+    
+    // ボタン
+    .c-btn a {
+        font-size: 0.7rem;
+    }
+
+    // ローダー
+.loading {
+    .kvArea {
+      width: 80%;
+    }
+}
+}
+

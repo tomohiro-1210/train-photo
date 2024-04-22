@@ -1,0 +1,129 @@
+.p-contents{
+    margin-top: 100px;
+    background-color: #0088a2;
+    .c-sectionTitle{
+        padding-top: 40px;
+        color: #fff;
+        border-bottom: 5px solid #fff;
+    }
+    .c-sectionTitle--underLine{
+        background: #fff;
+    }
+    &__list{
+        display: flex;
+        padding:20px 0 40px;
+    }
+    &__item{
+        padding:20px;
+        border:double 3px #fff;
+        color: #fff;
+        display: flex;
+        border-radius: 10px;
+    }
+    &__img{
+        width: calc(100% - 40% - 50px);
+        margin-right: 50px;
+    }
+    &__wrap{
+        width: calc(100% - 60%);
+        position: relative;
+        &__inner{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__title{
+        font-size: 2rem;
+        margin-bottom: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__desc{
+        line-height: 1.3rem;
+        margin-bottom: 15px;
+        text-align: left;
+        height: 150px;
+    }
+    &__btn{
+        display: inline-block;
+        background: #fff;
+        color: #0088a2;
+        padding: 15px 20px;
+        font-size: 20px;
+        border:solid 1px #0088a2;
+        border-radius: 30px;
+        width: 250px;
+        transition: all 1.0s;
+    }
+    &__btn.link{
+        span{
+            position: relative;
+        }
+        span:after{
+            content: ">";
+            display: block;
+            position: absolute;
+            right: -30%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+
+        }
+    }
+    &__btn.link:hover{
+        background: #0088a2;
+        color: #fff;
+        border: solid 1px #fff;
+    }
+    &__btn.no-link{
+        cursor: not-allowed;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .p-contents{
+        margin-top: 80px;
+        .c-sectionTitle{
+            padding-top: 30px;
+        }
+        &__list{
+            display: block;
+
+        }
+        &__item{
+            display: block;
+            margin:0 16px;
+        }
+        &__img{
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        &__wrap{
+            width: 100%;
+            position: static;
+            &__inner{
+                position: static;
+                top: 0%;
+                left: 0%;
+                transform: translate(0%, 0%);
+            }
+        }
+        &__title{
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        &__desc{
+            font-size: 1.1rem;
+        }
+        &__btn{
+            padding: 15px 20px;
+            font-size: 16px;
+            width: 200px;
+        }
+    }
+}

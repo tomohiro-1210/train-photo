@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- twitter name -->
+    <meta name="twitter:site" content="@Hoshitetsu_Web" />
+    <!-- ツイッターに表示されるタイトル -->
+    <meta name="twitter:title" content="ほしてつの鉄道写真館" />
+    <!-- サイト説明 -->
+    <meta name="twitter:description" content="ほしてつの鉄道写真館です！鉄道愛にあふれたサイトに仕上げました！是非ご覧ください！！" />
+    <!-- twitterに表示されるイメージ -->
+    <meta name="twitter:image" content="https://hoshitetsu-photo.com//assets/img/MainVisual/MV01_PC.jpg" />
+    <title>ほしてつの鉄道写真館</title>
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+    <body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <div class="l-header__name">
+                <h1 class="site-name">
+                    <img src="./assets/img/others/SiteTitle_en.jpg" alt="">
+                </h1>
+            </div>
+            <nav class="l-header__nav">
+                <ul class="l-header__menuList">
+                    <li class="l-header__menuLink"><a href="#">SiteTOPに上がる</a></li>
+                    <li class="l-header__menuLink "><a href="https://hoshitetsu-photo.com/">ほしてつの鉄道図鑑TOP</a></li>
+                    <li class="l-header__menuWrap">
+                        <p class="l-header__menuOuter" data-accordion="menuOuter"><a href="./zukan/zukan_top.html">鉄道図鑑</a></p>
+                        <div class="l-header__menuInner" data-accordion="menuInner">
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan/zukan_company.html?company_en=JR-West">JR西日本</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan/zukan_company.html?company_en=hanshin">阪神電気鉄道</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan/zukan_company.html?company_en=sanyo">山陽電気鉄道</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan/zukan_company.html?company_en=Hokuetsu-Express">北越急行</a>
+                            </p>
+                          </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="l-header__menuTrigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- mainvisual -->
+        <div class="mainvisual">
+            <div class="mainvisual__list">
+                <picture class="mainvisual__img">
+                    <source media="(max-width:921px)" srcset="./assets/img/MainVisual/MV01_SP.jpg">
+                    <img src="./assets/img/MainVisual/MV01_PC.jpg" alt="">  
+                </picture>
+            </div>
+            <p class="mainvisual__title">ほしてつの<br>鉄道写真館</p>
+            <img src="./assets/img/MainVisual/keyVisual__scroll.png" alt="" class="mainvisual__scroll">
+        </div>
+
+        <!-- welcome -->
+        <section class="l-section p-greeting" data-fadein>
+            <div class="p-greeting__wrap">
+                <div class="p-greeting__left">
+                    <ul class="p-greeting__single">
+                        <li class="p-greeting__single__list">
+                            <img src="./assets/img/welcome/slider_000.jpg" alt="">
+                        </li>
+                        <li class="p-greeting__single__list">
+                            <img src="./assets/img/welcome/slider_001.jpg" alt="">
+                        </li>
+                        <li class="p-greeting__single__list">
+                            <img src="./assets/img/welcome/slider_002.jpg" alt="">
+                        </li>
+                        <li class="p-greeting__single__list">
+                            <img src="./assets/img/welcome/slider_003.jpg" alt="">
+                        </li>
+                        <li class="p-greeting__single__list">
+                            <img src="./assets/img/welcome/slider_004.jpg" alt="">
+                        </li>
+                    </ul>
+                    <ul class="p-greeting__slider">
+                        <li class="p-greeting__slider__list">
+                            <img src="./assets/img/welcome/slider_000.jpg" alt="">
+                        </li>
+                        <li class="p-greeting__slider__list">
+                            <img src="./assets/img/welcome/slider_001.jpg" alt="">
+                        </li>
+                        <li class="p-greeting__slider__list">
+                            <img src="./assets/img/welcome/slider_002.jpg" alt="">
+                        </li>
+                        <li class="p-greeting__slider__list">
+                            <img src="./assets/img/welcome/slider_003.jpg" alt="">
+                        </li>
+                        <li class="p-greeting__slider__list">
+                            <img src="./assets/img/welcome/slider_004.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-greeting__right">
+                    <p class="p-greeting__title bold  mb-30">
+                        Welcome to Hoshitetsu Photo!<br>ほしてつの鉄道写真館へようこそ！
+                    </p>
+                    <p class="p-greeting__text  mb-30">
+                        はじめまして、ほしてつと申します。<br>
+                        このサイトでは発達障害の１種である<br>ASD(自閉症スペクトラム障害)もちで<br>
+                        撮り鉄歴１０年のほしてつが<br>これまで撮りためた鉄道写真を使って<br>様々なコンテンツを作っていきます。
+                    </p>
+                    <p class="p-greeting__text bold mb-30 cl-green">
+                        「私が鉄道初心者だったころこんな<br>鉄道サイトに出会いたかった。」
+                    </p>
+                    <p class="p-greeting__text">
+                        上記のコンセプトにテーマに<br>様々な鉄道コンテンツ作成に<br>挑戦していきます！
+                    </p>
+                </div>
+        </section>
+
+        <!-- profile -->
+        <section class="p-profile" id="Profile" data-fadein>
+            <h2 class="c-sectionTitle">Profile</h2>
+            <div class="l-section p-profile__wrap">
+                <div class="p-profile__img">
+                    <img src="./assets/img/others/profile_img.jpg" alt="">
+                </div>
+                <div class="p-profile__text">
+                    <h3 class="p-profile__title">プロフィール詳細</h3>
+                    <dl>
+                        <dt>名前:</dt>
+                        <dd>ほしてつ</dd>
+                        <dt>出身:</dt>
+                        <dd>福井県</dd>
+                        <dt>好きな鉄道:</dt>
+                        <dd class="p-profile__railway">JR西日本、JR四国、JR東日本
+                            <br>阪神電車、山陽電車、京阪電車
+                            <br>近鉄電車、京急電鉄、東武鉄道
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- contents -->
+        <section class="p-contents" id="Contents" data-fadein>
+            <h2 class="c-sectionTitle">Train Contents</h2>
+            <ul class="l-section p-contents__list">
+                <li class="p-contents__item">
+                    <img src="./assets/img/others/HP01.JPG" alt="" class="p-contents__img">
+                    <div class="p-contents__wrap">
+                        <div class="p-contents__wrap__inner">
+                            <h3 class="p-contents__title">鉄道図鑑</h3>
+                            <p class="p-contents__desc">私が撮影した写真を使って日本を走る列車の鉄道図鑑を作っています。車両は随時追加していくのでお楽しみに！</p>
+                            <a href="./zukan/zukan_top.html" class="p-contents__btn link"><span>鉄道図鑑を開く！</span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- モーダル本体 -->
+        <div id="modal01" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_001.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">国鉄381系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal02" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_002.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR九州813系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal03" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_003.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR西日本225系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal04" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_004.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">阪神電気鉄道9300系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal05" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_005.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">阪急電鉄1300系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal06" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_006.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR西日本683系0番台</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal07" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_007.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR四国7200系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal08" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_008.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR東日本E233系2000番台</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal09" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_009.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">国鉄185系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal10" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_010.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR四国8600系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal11" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_011.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">小田急電鉄70000形GSE</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal12" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_012.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">京阪電気鉄道3000系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal13" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_013.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR四国2000系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal14" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_014.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR東日本E235系山手線</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal15" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_015.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">東武鉄道30000系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal16" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_016.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR九州787系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal17" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_017.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">JR東海HC85系</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal18" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_018.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">京成電鉄AE形スカイライナー</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal19" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_019.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">近畿日本鉄道80000系ひのとり</p>
+                </div>
+            </div>
+        </div>
+        <div id="modal20" class="p-TrainPictures__modal">
+            <div class="p-TrainPictures__modal__body">
+                <div class="p-TrainPictures__modal__close">×</div>
+                <div class="p-TrainPictures__modal__content">
+                    <img src="./assets/img/TrainPictures/TrainPicture_020.jpg" alt="">
+                    <p class="p-TrainPictures__modal__series">東京都交通局5500形</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TrainPictures -->
+        <div class="p-TrainPictures" id="TrainPictures" data-fadein>
+                <h2 class="c-sectionTitle">Train Pictures</h2>
+                <p class="p-TrainPictures__SPtext">画像をタップすると拡大画像が表示されます</p>
+                <div class="p-TrainPictures__list">
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal01">
+                        <img src="./assets/img/TrainPictures/TrainPicture_001.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal02">
+                        <img src="./assets/img/TrainPictures/TrainPicture_002.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal03">
+                        <img src="./assets/img/TrainPictures/TrainPicture_003.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal04">
+                        <img src="./assets/img/TrainPictures/TrainPicture_004.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal05">
+                        <img src="./assets/img/TrainPictures/TrainPicture_005.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal06">
+                        <img src="./assets/img/TrainPictures/TrainPicture_006.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal07">
+                        <img src="./assets/img/TrainPictures/TrainPicture_007.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal08">
+                        <img src="./assets/img/TrainPictures/TrainPicture_008.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal09">
+                        <img src="./assets/img/TrainPictures/TrainPicture_009.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal10">
+                        <img src="./assets/img/TrainPictures/TrainPicture_010.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal11">
+                        <img src="./assets/img/TrainPictures/TrainPicture_011.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal12">
+                        <img src="./assets/img/TrainPictures/TrainPicture_012.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal13">
+                        <img src="./assets/img/TrainPictures/TrainPicture_013.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal14">
+                        <img src="./assets/img/TrainPictures/TrainPicture_014.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal15">
+                        <img src="./assets/img/TrainPictures/TrainPicture_015.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal16">
+                        <img src="./assets/img/TrainPictures/TrainPicture_016.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal17">
+                        <img src="./assets/img/TrainPictures/TrainPicture_017.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal18">
+                        <img src="./assets/img/TrainPictures/TrainPicture_018.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal19">
+                        <img src="./assets/img/TrainPictures/TrainPicture_019.jpg" alt="">
+                    </a>
+                    <a href="#TrainPictures" class="p-TrainPictures__item modal-open"  data-target="modal20">
+                        <img src="./assets/img/TrainPictures/TrainPicture_020.jpg" alt="">
+                    </a>
+                </div>
+                
+        </div>
+
+            <section class="p-news" id="News" >
+                <h2 class="c-sectionTitle">News</h2>
+                <div class="l-section p-news__text">
+                    <dl>
+                        <dt>2023/2/25</dt>
+                        <dd>ほしてつの鉄道写真館TOPページ公開</dd>
+                        <dt>2023/2/25</dt>
+                        <dd>ほしてつの鉄道写真館鉄道図鑑ページ公開</dd>
+                    </dl>
+                </div>
+            </section>
+    </main>
+
+    
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <p class="l-footer__copyright">&copy;2022Hoshitetsu</p>
+    </footer>
+
+    
+
+    
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+    </script>
+</body>
+</html>

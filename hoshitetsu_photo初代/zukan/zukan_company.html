@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ほしてつの鉄道写真館-会社別ページ-</title>
+    <link rel="stylesheet" href="./assets/css/zukan.css">
+    <link rel="stylesheet" href="./assets/css/zukan_company.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=RocknRoll+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ローダー -->
+    <div class="loading">
+        <div class="kvArea loading__wrap">
+          <div class="loading__inner"><img src="./assets/img/others/loading.jpg" alt="" class="loading__img"></div>
+        </div>
+    </div>
+    
+    <!-- ヘッダー -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <div class="l-header__name">
+                <h1 class="site-name">
+                    <img src="./assets/img/others/SiteTitle_en.jpg" alt="">
+                </h1>
+            </div>
+            <div class="l-header__menuTrigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="l-header__nav">
+                <ul class="l-header__menuList">
+                    <li class="l-header__menuLink "><a href="https://hoshitetsu-photo.com/">ほしてつの鉄道図鑑TOP</a></li>
+                    <li class="l-header__menuWrap">
+                        <p class="l-header__menuOuter" data-accordion="menuOuter"><a href="./zukan_top.html">鉄道図鑑</a></p>
+                        <div class="l-header__menuInner" data-accordion="menuInner">
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan_company.html?company_en=JR-West">JR西日本</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan_company.html?company_en=hanshin">阪神電気鉄道</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan_company.html?company_en=sanyo">山陽電気鉄道</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan_company.html?company_en=Hokuetsu-Express">北越急行</a>
+                            </p>
+                          </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contents" id="company">
+        
+        <!-- リンクルート -->
+        <p class="linkRoute commonWidth">
+            <a href="http://hoshitetsu-photo.com/"><span class="linkRoute__top">ほしてつの鉄道写真館TOP</span></a>
+            <span class="linkRoute__right">></span>
+            <a href="./zukan_top.html"><span class="linkRoute__top">鉄道図鑑</span></a>
+            <span class="linkRoute__right">></span>
+            <span class="linkRoute__nowPage" data-train-list="company_ja"></span>
+        </p>
+
+        <!-- ページバナー -->
+        <div class="banner">
+            <img src="" alt="" id="bannerImg">
+        </div>
+
+        <!-- 鉄道会社の車両 -->
+        <section class="commonWidth">
+            
+            <h3 class="c-sectionTitle mt-0"><span data-train-list="company_ja"></span>の車両たち</h3>
+            <div class="p-trainList companyList">
+            </div>
+
+        </section>
+        
+        <!-- ピックアップ -->
+        <section class="commonWidth">
+            
+            <h3 class="c-sectionTitle">鉄道車両ピックアップ</h3>
+            <div class="p-trainList" data-train-list="pickup">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- フッター -->
+    <footer class="l-footer">
+        <p class="l-footer__copyright">
+            ©Copyright Hoshitetsu 2023
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/trainJS/HanshinSanyo.js"></script>
+    <script src="./assets/trainJS/JRwest.js"></script>
+    <script src="./assets/trainJS/JRShikoku.js"></script>
+    <script src="./assets/trainJS/Keihan.js"></script>
+    <script src="./assets/trainJS/Keisei.js"></script>
+    <script src="./assets/trainJS/Keikyu.js"></script>
+    <script src="./assets/trainJS/train_data.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/zukan.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+// header// header
+.l-header{
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    position: relative;
+    border-bottom: solid 1px #000;
+    background: #fff;
+    // 背景画が青
+    .bgblue{
+        background:rgba(#0088c2, 0.95);
+    }
+    &__wrap{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1000px;
+        margin: 0 auto;
+        .site-name{
+            color: #fff;
+            text-align: center;
+            font-size: 35px;
+            width: 250px;
+            padding: 10px;
+        }
+    }
+    &__nav{
+        position: fixed;
+        width: 100%;
+        top: 72px;
+        left: calc(100% + 900px);
+        background: rgba(#0088a2 , 0.95);
+        height: 100vh;
+        z-index: 2000;
+        transition: all 0.4s;
+    }
+    &__nav.is-active{
+        left: 50%;
+    }
+    &__menuList{
+        display: block;
+        margin-right: 0;
+    }
+    &__menuLink{
+        width: 100%;
+        border-bottom: solid 1px #fff;
+        text-align: left;
+        a{
+            display: inline-block;
+            color: #fff;
+            padding: 20px 40px;
+        }
+    }
+    &__menuOuter{
+        width: 100%;
+        border-bottom: solid 1px #fff;
+        text-align: left;
+            display: inline-block;
+            color: #fff;
+            padding: 20px 40px;
+            a{
+                color: #fff;
+            }
+    }
+    &__menuWrap{
+        position: relative;
+    }
+    // アコーディオンメニュー
+    &__menuTrigger{
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.4s;
+        width: 30px;
+        height: 30px;
+        z-index: 100;
+        display: block;
+        span{
+            display: inline-block;
+            transition: all 0.4s;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #0088a2;
+        }
+        span:nth-of-type(1){
+            top: 0;
+        }
+        span:nth-of-type(2){
+            top: 35%;
+        }
+        span:nth-of-type(3){
+            top: 70%;
+        }
+        span:nth-of-type(3)::after{
+            content: "Menu";
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #0088a2;
+            font-size: 0.8rem;
+        }
+    }
+    &__menuTrigger.is-active{
+        span:nth-of-type(1){
+            top: 35%;
+            transform: translateY(0px) rotate(-45deg);
+            width: 100%;
+        }
+        span:nth-of-type(2){
+            opacity: 0;
+        }
+        span:nth-of-type(3){
+            top: 35%;
+            transform: translateX(0px) rotate(45deg);
+            width: 100%;
+        }
+        span:nth-of-type(3)::after{
+            content: "Close";
+            top: 10px;
+            left: 13px;
+            transform: translateY(0) rotate(-45deg);
+        }
+    }
+}
+
+[data-accordion="menuOuter"]:after{
+    content: "Ⅴ";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: calc(56px / 2);
+    right: 55%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+[data-accordion="menuOuter"].is-active:after{
+    content: "Λ";
+    top: calc(56px / 2);
+
+}
+
+[data-accordion="menuInner"]{
+    display: none;
+}
+
+@media screen and (max-width:921px){
+    .l-header{
+        &__wrap{
+            width: calc(100% - 40px);
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .l-header{
+        &__wrap{
+            .site-name{
+                width: 200px;
+                padding: 0px;
+            }
+        }
+        &__nav{
+            top: 56px;
+        }
+        &__nav.is-active{
+            left: 10px;
+        }
+    }
+    [data-accordion="menuOuter"]:after{
+        right: 10%;
+    }
+}

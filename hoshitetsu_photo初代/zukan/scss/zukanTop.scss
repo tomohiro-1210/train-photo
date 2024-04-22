@@ -1,0 +1,129 @@
+
+// スライダー
+.slider{
+    padding: 20px 0;
+    background: #00ABE1;
+    &__item{
+        padding-left: 20px;
+        padding-bottom: 4px;
+        img{
+            box-shadow: 5px 5px 2px #081BBB;
+            border-radius: 5px;
+        }
+    }
+}
+.slider-reverse{
+    padding: 20px 0;
+    background: #00ABE1;
+}
+
+// 会社別リンク
+.companyList{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    &__textPC{
+        padding: 0 20px 20px;
+        display: block;
+    }
+    &__textSP{
+        padding: 0 20px;
+        display: none;
+    }
+    &__item{
+        width: calc(100% / 2 - 10px);
+        display: block;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        img{
+            box-shadow: 5px 5px 2px rgba($color: #333, $alpha: 0.8);
+            border-radius: 5px;
+        }
+    }
+    &__item:nth-child(2n){
+        padding-right: 0px;
+    }
+}
+
+// ニュース
+.news{
+    &__text{
+
+        padding: 0 20px;
+        dl{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-top: solid 2px #333;
+        }
+        dt{
+            width: calc(25%);
+            border-bottom: solid 2px #333;
+            padding: 10px 0 10px 10px;
+        }
+        dd{
+            width: calc(100% - 25% - 20px);
+            border-bottom: solid 2px #333;
+            padding: 10px 10px 10px 0px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    //  ページタイトル
+    .c-page_title{
+        padding: 20px;
+    }
+    // スライダー
+    .slider{
+        padding: 16px 0;
+        &__item{
+            padding-left: 16px;
+        }
+    }
+    .slider-reverse{
+        padding-bottom: 16px;
+    }
+
+    // 会社別リンク
+    .companyList{
+        display: block;
+        flex-wrap: nowrap;
+        &__textPC{
+            display: none;
+        }
+        &__textSP{
+            font-size: 0.9rem;
+            padding: 0 20px 20px;
+            display: block;
+        }
+        &__item{
+            width: auto;
+            display: block;
+            padding-right: 0;
+        }
+    }
+    
+    // ニュース
+    .news{
+        &__text{
+            dl{
+                display: block;
+                justify-content: start;
+                flex-wrap: nowrap;
+                font-size: 0.9rem;
+            }
+            dt{
+                width: auto;
+                border-bottom: none;
+                padding: 10px 0 0px 10px;
+            }
+            dd{
+                width: auto;
+                border-bottom: solid 2px #333;
+                padding: 10px 0px 10px 10px;
+            }
+        }
+    }
+}
+

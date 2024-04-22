@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ほしてつの鉄道写真館-車両詳細-</title>
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/zukan.css">
+    <link rel="stylesheet" href="./assets/css/zukan_trainDetail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=RocknRoll+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+<body >
+    <!-- ローダー -->
+    <div class="loading">
+        <div class="kvArea loading__wrap">
+          <div class="loading__inner"><img src="./assets/img/others/loading.jpg" alt="" class="loading__img"></div>
+        </div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <div class="l-header__name">
+                <h1 class="site-name">
+                    <img src="./assets/img/others/SiteTitle_en.jpg" alt="">
+                </h1>
+            </div>
+            <div class="l-header__menuTrigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="l-header__nav">
+                <ul class="l-header__menuList">
+                    <li class="l-header__menuLink "><a href="https://hoshitetsu-photo.com/">ほしてつの鉄道図鑑TOP</a></li>
+                    <li class="l-header__menuWrap">
+                        <p class="l-header__menuOuter" data-accordion="menuOuter"><a href="./zukan_top.html">鉄道図鑑</a></p>
+                        <div class="l-header__menuInner" data-accordion="menuInner">
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan_company.html?company_en=JR-West">JR西日本</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan_company.html?company_en=hanshin">阪神電気鉄道</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan_company.html?company_en=sanyo">山陽電気鉄道</a>
+                            </p>
+                            <p class="l-header__menuLink bgblue">
+                                <a href="./zukan_company.html?company_en=Hokuetsu-Express">北越急行</a>
+                            </p>
+                          </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contents" id="Detail">
+        
+        <!-- リンクルート -->
+        <p class="linkRoute commonWidth">
+            <a href="http://hoshitetsu-photo.com/"><span class="linkRoute__top">ほしてつの鉄道写真館TOP</span></a>
+            <span class="linkRoute__right">></span>
+            <a href="./zukan_top.html"><span class="linkRoute__top">鉄道図鑑</span></a>
+            <span class="linkRoute__right">></span>
+            <a href="" id="company_name"><span class="linkRoute__top" data-train-parts="company_ja"></span></a>
+            <span class="linkRoute__right">></span>
+            <span class="linkRoute__nowPage">
+                <span data-train-parts="company_ja"></span>
+                <span data-train-parts="series"></span>
+                <span data-train-parts="colors"></span>
+            </span>
+        </p>
+
+        <!-- 車両写真 -->
+        <div class="p-trainImg">
+            <p class="p-trainImg__series">
+                <span data-train-parts="company_ja"></span>
+                <span data-train-parts="series"></span><br>
+                <span class="p-trainImg__series__span" data-train-parts="colors"></span>
+            </p>
+            <div class="p-trainImg__wrap">
+                <div class="p-trainImg__list">
+                    <div class="p-trainImg__item">
+                        <img src="" alt="" class="p-trainImg__image_1">
+                        <p class="p-trainImg__place">(<span data-train-parts="place_1"></span>)</p>
+                    </div>
+                    <div class="p-trainImg__item">
+                        <img src="" alt="" class="p-trainImg__image_2">
+                        <p class="p-trainImg__place">(<span data-train-parts="place_2"></span>)</p>
+                    </div>
+                    <div class="p-trainImg__item">
+                        <img src="" alt="" class="p-trainImg__image_3">
+                        <p class="p-trainImg__place">(<span data-train-parts="place_3"></span>)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 車両説明 -->
+        <section class="commonWidth">
+            
+            <h3 class="c-sectionTitle mt-20">車両データ</h3>
+            <p class="trainData">
+                <span>・運行路線</span><br>
+                <span data-train-parts="company_lines"></span><br>
+                <span data-train-parts="other_company_lines"></span><br><br>
+                <span>・車両説明</span><br>
+                <span data-train-parts="explanatory_text"></span>
+            </p>
+
+        </section>
+        <section class="commonWidth">
+            
+            <h3 class="c-sectionTitle mt-20"><span data-train-parts="company_ja"></span><span data-train-parts="series"></span>の写真</h3>
+            <ul class="p-img__list">
+                <li href="#TrainPictures" class="p-img__item modal-open "  data-target="modal01">
+                    <img src="" alt="" class="modal-img1">
+                </li>
+                <li href="#TrainPictures" class="p-img__item modal-open "  data-target="modal02">
+                    <img src="" alt="" class="modal-img2">
+                </li>
+                <li href="#TrainPictures" class="p-img__item modal-open "  data-target="modal03">
+                    <img src="" alt="" class="modal-img3">
+                </li>
+                <li href="#TrainPictures" class="p-img__item modal-open "  data-target="modal04">
+                    <img src="" alt="" class="modal-img4">
+                </li>
+            </ul>
+            
+        </section>
+
+        <!-- モーダル本体 -->
+        <div id="modal01" class="p-img__modal">
+            <div class="p-img__modal__body">
+                <div class="p-img__modal__close">×</div>
+                <div class="p-img__modal__content">
+                    <img src="" class="modal-img1" alt="">
+                    <p class="p-img__modal__text" data-train-parts="comment1"></p>
+                </div>
+            </div>
+        </div>
+        <div id="modal02" class="p-img__modal">
+            <div class="p-img__modal__body">
+                <div class="p-img__modal__close">×</div>
+                <div class="p-img__modal__content">
+                    <img src="" class="modal-img2" alt="">
+                    <p class="p-img__modal__text" data-train-parts="comment2"></p>
+                </div>
+            </div>
+        </div>
+        <div id="modal03" class="p-img__modal">
+            <div class="p-img__modal__body">
+                <div class="p-img__modal__close">×</div>
+                <div class="p-img__modal__content">
+                    <img src="" class="modal-img3" alt="">
+                    <p class="p-img__modal__text" data-train-parts="comment3"></p>
+                </div>
+            </div>
+        </div>
+        <div id="modal04" class="p-img__modal">
+            <div class="p-img__modal__body">
+                <div class="p-img__modal__close">×</div>
+                <div class="p-img__modal__content">
+                    <img src="" class="modal-img4" alt="">
+                    <p class="p-img__modal__text" data-train-parts="comment4"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ピックアップ -->
+        <section class="commonWidth">
+            
+            <h3 class="c-sectionTitle">鉄道車両ピックアップ</h3>
+            <div class="p-trainList" data-train-list="pickup">
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="l-footer">
+        <p class="l-footer__copyright">
+            ©Copyright Hoshitetsu 2023
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/trainJS/HanshinSanyo.js"></script>
+    <script src="./assets/trainJS/JRwest.js"></script>
+    <script src="./assets/trainJS/JRShikoku.js"></script>
+    <script src="./assets/trainJS/Keihan.js"></script>
+    <script src="./assets/trainJS/Keisei.js"></script>
+    <script src="./assets/trainJS/Keikyu.js"></script>
+    <script src="./assets/trainJS/train_data.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/zukan.js"></script>
+</body>
+</html>

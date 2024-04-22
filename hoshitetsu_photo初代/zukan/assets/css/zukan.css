@@ -1,0 +1,532 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+  color: #000;
+  overflow-x: hidden;
+  background: url();
+  font-weight: bold;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.commonWidth {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+.linkRoute {
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.linkRoute__top {
+  padding-right: 10px;
+  color: #081BBB;
+}
+.linkRoute__right {
+  padding-right: 10px;
+}
+
+.bg80 {
+  background: rgba(0, 136, 194, 0.95);
+}
+
+.c-page_title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 40px 20px;
+  font-weight: bold;
+  color: #081BBB;
+}
+
+.c-sectionTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  border-bottom: solid 5px #081BBB;
+  padding: 10px 20px;
+}
+
+.p-trainList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 10px;
+}
+.p-trainList__item {
+  margin: 10px;
+  box-shadow: 5px 5px 2px rgba(51, 51, 51, 0.8);
+}
+.p-trainList__wrap {
+  background: #00ABE1;
+  padding-bottom: 10px;
+}
+.p-trainList__series {
+  padding: 10px 10px 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 1.5rem;
+  height: 2rem;
+}
+
+.c-btn a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  padding: 10px 25px 10px 25px;
+  margin: 10px 10px 0;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: #081BBB;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.c-btn a:hover {
+  color: #313131;
+}
+
+.c-btn a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #fff;
+  transition: 0.3s;
+  left: 0;
+}
+
+.c-btn a:hover:after {
+  width: 100%;
+  z-index: -1;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: #0088c2;
+  text-align: center;
+}
+.loading .kvArea {
+  width: 50%;
+}
+.loading__wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading__inner {
+  text-align: center;
+}
+.loading__inner img {
+  max-width: 100%;
+  height: auto;
+}
+.loading__img {
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeUpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+@media screen and (max-width: 920px) {
+  .p-trainList__series {
+    font-size: 1rem;
+  }
+  .c-btn a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .linkRoute {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .linkRoute__top {
+    padding-right: 6px;
+  }
+  .linkRoute__right {
+    padding-right: 6px;
+  }
+  .linkRoute__nowPage {
+    border-bottom: solid 1px #333;
+  }
+  .c-page_title {
+    font-size: 2rem;
+  }
+  .c-sectionTitle {
+    font-size: 1.2rem;
+    margin-top: 60px;
+  }
+  .p-trainList {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 8px;
+  }
+  .p-trainList__item {
+    margin: 8px;
+  }
+  .p-trainList__series {
+    font-size: 0.75rem;
+  }
+  .mt-0 {
+    margin-top: 0;
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .c-btn a {
+    font-size: 0.7rem;
+  }
+  .loading .kvArea {
+    width: 80%;
+  }
+}
+body {
+  background: url(../img/bgImg/zukan_PC.png);
+  background-size: contain;
+  background-color: rgba(222, 222, 222, 0.7);
+  background-blend-mode: lighten;
+}
+
+body.shitetsu {
+  background: url(../img/bgImg/shitetsu_zukan_PC.png);
+  background-size: contain;
+  background-color: rgba(222, 222, 222, 0.7);
+  background-blend-mode: lighten;
+}
+
+body.JR {
+  background: url(../img/bgImg/JR_zukan_PC.png);
+  background-size: contain;
+  background-color: rgba(222, 222, 222, 0.7);
+  background-blend-mode: lighten;
+}
+
+@media screen and (max-width: 920px) {
+  body {
+    background: url(../img/bgImg/zukan_Tb.png);
+    background-size: contain;
+    background-color: rgba(222, 222, 222, 0.7);
+    background-blend-mode: lighten;
+  }
+  body.shitetsu {
+    background: url(../img/bgImg/shitetsu_zukan_Tb.png);
+    background-size: contain;
+    background-color: rgba(222, 222, 222, 0.7);
+    background-blend-mode: lighten;
+  }
+  body.JR {
+    background: url(../img/bgImg/JR_zukan_Tb.png);
+    background-size: contain;
+    background-color: rgba(222, 222, 222, 0.7);
+    background-blend-mode: lighten;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background: url(../img/bgImg/zukan_SP.png);
+    background-size: contain;
+    background-color: rgba(222, 222, 222, 0.7);
+    background-blend-mode: lighten;
+  }
+  body.shitetsu {
+    background: url(../img/bgImg/shitetsu_zukan_SP.png);
+    background-size: contain;
+    background-color: rgba(222, 222, 222, 0.7);
+    background-blend-mode: lighten;
+  }
+  body.JR {
+    background: url(../img/bgImg/JR_zukan_SP.png);
+    background-size: contain;
+    background-color: rgba(222, 222, 222, 0.7);
+    background-blend-mode: lighten;
+  }
+}
+.l-header {
+  width: 100%;
+  z-index: 1000;
+  height: 70px;
+  position: relative;
+  border-bottom: solid 1px #000;
+  background: #fff;
+}
+.l-header .bgblue {
+  background: rgba(0, 136, 194, 0.95);
+}
+.l-header__wrap {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  margin: 0 auto;
+}
+.l-header__wrap .site-name {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  width: 250px;
+  padding: 10px;
+}
+.l-header__nav {
+  position: fixed;
+  width: 100%;
+  top: 72px;
+  left: calc(100% + 900px);
+  background: rgba(0, 136, 162, 0.95);
+  height: 100vh;
+  z-index: 2000;
+  transition: all 0.4s;
+}
+.l-header__nav.is-active {
+  left: 50%;
+}
+.l-header__menuList {
+  display: block;
+  margin-right: 0;
+}
+.l-header__menuLink {
+  width: 100%;
+  border-bottom: solid 1px #fff;
+  text-align: left;
+}
+.l-header__menuLink a {
+  display: inline-block;
+  color: #fff;
+  padding: 20px 40px;
+}
+.l-header__menuOuter {
+  width: 100%;
+  border-bottom: solid 1px #fff;
+  text-align: left;
+  display: inline-block;
+  color: #fff;
+  padding: 20px 40px;
+}
+.l-header__menuOuter a {
+  color: #fff;
+}
+.l-header__menuWrap {
+  position: relative;
+}
+.l-header__menuTrigger {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.4s;
+  width: 30px;
+  height: 30px;
+  z-index: 100;
+  display: block;
+}
+.l-header__menuTrigger span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #0088a2;
+}
+.l-header__menuTrigger span:nth-of-type(1) {
+  top: 0;
+}
+.l-header__menuTrigger span:nth-of-type(2) {
+  top: 35%;
+}
+.l-header__menuTrigger span:nth-of-type(3) {
+  top: 70%;
+}
+.l-header__menuTrigger span:nth-of-type(3)::after {
+  content: "Menu";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0088a2;
+  font-size: 0.8rem;
+}
+.l-header__menuTrigger.is-active span:nth-of-type(1) {
+  top: 35%;
+  transform: translateY(0px) rotate(-45deg);
+  width: 100%;
+}
+.l-header__menuTrigger.is-active span:nth-of-type(2) {
+  opacity: 0;
+}
+.l-header__menuTrigger.is-active span:nth-of-type(3) {
+  top: 35%;
+  transform: translateX(0px) rotate(45deg);
+  width: 100%;
+}
+.l-header__menuTrigger.is-active span:nth-of-type(3)::after {
+  content: "Close";
+  top: 10px;
+  left: 13px;
+  transform: translateY(0) rotate(-45deg);
+}
+
+[data-accordion=menuOuter]:after {
+  content: "Ⅴ";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 28px;
+  right: 55%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+[data-accordion=menuOuter].is-active:after {
+  content: "Λ";
+  top: 28px;
+}
+
+[data-accordion=menuInner] {
+  display: none;
+}
+
+@media screen and (max-width: 921px) {
+  .l-header__wrap {
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-header__wrap .site-name {
+    width: 200px;
+    padding: 0px;
+  }
+  .l-header__nav {
+    top: 56px;
+  }
+  .l-header__nav.is-active {
+    left: 10px;
+  }
+  [data-accordion=menuOuter]:after {
+    right: 10%;
+  }
+}
+.l-footer {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #000;
+}
+.l-footer__copyright {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=zukan.css.map */

@@ -1,0 +1,14 @@
+
+// footer
+.l-footer{
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: #0088a2;
+    margin-top: 40px;
+    color: #fff;
+    &__copyright{
+        padding: 10px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,16 @@
+@forward "./foundation/__init__";
+@forward "./layout/__init__";
+@forward "./component/__init__";
+@forward "./project/__init__";
+
+// フェードイン
+[data-fadein]{
+    opacity: 0;
+    transition: all 1.6s;
+    transform: translateY(150px); //縦方向
+}
+[data-fadein].is-over{
+    opacity: 1;
+    transform: translateY(0);
+}
+
